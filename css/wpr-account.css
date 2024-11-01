@@ -1,0 +1,392 @@
+/* Main Container */
+.wpr-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    /*background-color: #f9f9f9;*/
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Header */
+.wpr-profile-header {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Profile Panel */
+.wpr-pr-panel {
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Flex layout */
+.wpr-profile-layout {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Sidebar Navigation */
+.wpr-profile-adjust {
+    flex: 1 1 250px;
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+#main-nav {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+#main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#main-nav li {
+    margin-bottom: 10px;
+}
+
+#main-nav a {
+    display: block;
+    padding: 10px;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#main-nav a:hover,
+#main-nav a.active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Main Content Area */
+.wpr-tab-body {
+    flex-grow: 1;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Hide Tabs by Default */
+.wpr-tab-pane {
+    display: none;
+}
+
+.wpr-tab-pane.active {
+    display: block;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .wpr-profile-body {
+        flex-direction: column;
+    }
+
+    .wpr-profile-adjust,
+    .wpr-tab-body {
+        max-width: 100%;
+    }
+
+    #main-nav {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    #main-nav a {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+
+/* =============== PROFILE VIEW =================== */
+/* Data View Container */
+.wpr-data-view {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Data Item */
+.wpr-data-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.wpr-pr-title {
+    font-weight: bold;
+    color: #333;
+    flex-basis: 40%;
+}
+
+.wpr-pr-value {
+    color: #555;
+    flex-basis: 60%;
+    text-align: right;
+}
+
+/* Last View Info */
+.wpr-last-view {
+    margin-top: 20px;
+}
+
+.wpr-last-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .wpr-data-item {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .wpr-pr-value {
+        text-align: left;
+        margin-top: 5px;
+    }
+
+    .wpr-last-item {
+        flex-direction: column;
+        text-align: left;
+    }
+}
+
+/* =========== DELETE ACCOUNT ================ */
+/* Main Container */
+.wpr-delete-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Warning Section */
+.wpr-delete-warning {
+    margin-bottom: 20px;
+}
+
+.wpr-warning-icon {
+    color: #ff5a5a;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.wpr-delete-warning h4 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.wpr-confirm-text {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Delete Button */
+.wpr-delete-action {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.wpr-delete-btn {
+    background-color: #ff5a5a;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 6px rgba(255, 90, 90, 0.3);
+}
+
+.wpr-delete-btn:hover {
+    background-color: #e04a4a;
+    box-shadow: 0 5px 10px rgba(255, 90, 90, 0.4);
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+    .wpr-delete-container {
+        padding: 15px;
+    }
+
+    .wpr-warning-icon {
+        font-size: 28px;
+    }
+
+    .wpr-delete-warning h4 {
+        font-size: 20px;
+    }
+
+    .wpr-confirm-text {
+        font-size: 14px;
+    }
+
+    .wpr-delete-btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+
+/* ========== PROFILE VIEW PUBLIC ============= */
+/* Main Container */
+.wpr-profile-wrapper {
+    max-width: 1000px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Banner and Cover Photo */
+.wpr-banner {
+    position: relative;
+    text-align: center;
+    background-color: #007bff;
+}
+
+.wpr-cover-photo {
+    position: relative;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wpr-cover-photo-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wpr-cover-initial {
+    font-size: 72px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.wpr-cover-initial-text {
+    font-size: 72px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* User Info */
+.wpr-user-info {
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.wpr-profile-photo {
+    width: 100px;
+    height: 100px;
+    background-color: #dde4e4;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #ffffff;
+    margin: 0 auto;
+}
+
+.wpr-profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.wpr-initial {
+    font-size: 48px;
+    color: #ffffff;
+    background-color: #007bff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.wpr-username {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Account Options */
+.wpr-account-options {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.wpr-account-link, .wpr-logout-link {
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+.wpr-account-link:hover, .wpr-logout-link:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Profile Body */
+.wpr-profile-body {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wpr-account-options {
+        right: 10px;
+    }
+
+    .wpr-profile-wrapper {
+        margin: 10px;
+    }
+
+    .wpr-username {
+        font-size: 20px;
+    }
+}
+

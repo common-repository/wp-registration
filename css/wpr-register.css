@@ -1,0 +1,172 @@
+/* Wrapper Style */
+#wpr-wrapper {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styling */
+form.wpr-forms p {
+    margin: 0 !important;
+}
+
+/* Grid System */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Column Classes */
+.col-md-6 {
+    flex: 0 0 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+}
+
+.col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.col-md-4 {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+
+.col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+[class*='col-md-'] {
+    box-sizing: border-box;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+    .col-md-12, .col-md-6, .col-md-4, .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    #wpr-wrapper {
+        padding: 10px;
+    }
+    
+    .wpr_field_data, .btn {
+        font-size: 13px;
+    }
+}
+
+/* Form Title */
+.wpr-form-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Form Field Wrapper */
+.wpr_field_wrapper {
+    margin-bottom: 5px;
+}
+
+.wpr-field-title {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.wpr-field-icon {
+    color: #ff0000;
+}
+
+/* Input Fields */
+.wpr_field_data {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.wpr_field_data:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+/* Error Messages */
+.wpr_field_error {
+    color: #ff0000;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Button Wrapper */
+.btn-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+/* Submit Button */
+.btn-submit {
+    padding: 10px 20px;
+    max-width: 250px;
+}
+
+.btn {
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Login Link */
+.login-link {
+    color: #007bff;
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+/* Spinner and Alert */
+.wpr-spinner, .wpr-alert {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #wpr-wrapper {
+        padding: 15px;
+    }
+
+    .wpr_field_data, .btn {
+        font-size: 14px;
+    }
+}

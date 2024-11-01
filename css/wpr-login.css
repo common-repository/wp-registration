@@ -1,0 +1,215 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.wpr-login-wrapper {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+}
+
+.wpr-login-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.wpr-login-heading h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.wpr-login-field {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.wpr-login-field label {
+    color: #888;
+    margin-right: 10px;
+}
+
+.wpr-login-field input {
+    border: none;
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.wpr-login-field input:focus {
+    outline: none;
+    border: 1px solid #007bff;
+}
+
+.wpr-login-remember {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 15px;
+}
+
+.wpr-login-remember label {
+    font-size: 14px;
+    color: #555;
+}
+
+.wpr-login-submit {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.wpr-login-submit:hover {
+    background-color: #0056b3;
+}
+
+.wpr-login-links {
+    margin-top: 10px;
+}
+
+.wpr-login-links a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.wpr-login-links a:hover {
+    text-decoration: underline;
+}
+
+.wpr-signup {
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+}
+
+.wpr-signup-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.wpr-signup-link:hover {
+    text-decoration: underline;
+}
+
+
+.wpr-signup-btn:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .wpr-login-wrapper {
+        padding: 15px;
+    }
+
+    .wpr-login-field {
+        flex-direction: column;
+    }
+
+    .wpr-login-submit, .wpr-signup-btn {
+        font-size: 16px;
+    }
+}
+
+.wpr-pass-reset-wrapper {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.wpr-pass-reset-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.wpr-pass-reset-heading h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Field Styling */
+.wpr-pass-reset-field {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.wpr-pass-reset-field label {
+    color: #888;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.wpr-pass-reset-field input {
+    border: none;
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.wpr-pass-reset-field input:focus {
+    outline: none;
+    border: 1px solid #007bff;
+}
+
+/* Button Styling */
+.wpr-pass-reset-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.wpr-pass-reset-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .wpr-pass-reset-wrapper {
+        padding: 15px;
+    }
+
+    .wpr-pass-reset-field {
+        flex-direction: column;
+    }
+
+    .wpr-pass-reset-btn {
+        font-size: 16px;
+    }
+}
+
